@@ -1,0 +1,100 @@
+/* Background gradient for the full screen */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #fffbbd, #fec8d8);
+}
+
+/* Container for the login/signup form */
+.login-card {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Decorative header background */
+.login-header {
+  height: 160px;
+  background: linear-gradient(to right, #f687b3, #ffdd6b);
+}
+
+.login-header h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Content area padding */
+.login-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Input fields style */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #ffdd6b;
+  box-shadow: 0 0 3px #ffdd6b;
+}
+
+/* Buttons style */
+.button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-primary {
+  background-color: #ffdd6b;
+  color: white;
+  border: none;
+}
+
+.button-primary:hover {
+  background-color: #ffb84c;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: #ffdd6b;
+  border: 2px solid #ffdd6b;
+}
+
+.button-secondary:hover {
+  background-color: #fffbbd;
+}
+
+.button-logout {
+  background-color: transparent;
+  color: #6b7280;
+  border: 2px solid #d1d5db;
+}
+
+.button-logout:hover {
+  background-color: #f3f4f6;
+}

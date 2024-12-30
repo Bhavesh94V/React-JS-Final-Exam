@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container for all content */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #007bff;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3;
+}
+
+/* Movie List Styling */
+.movielists {
+  list-style: none;
+  padding: 0;
+}
+
+.movielists li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movielists img {
+  max-width: 50px;
+  border-radius: 5px;
+}
+
+.movielists h4 {
+  margin-left: 20px;
+  font-size: 18px;
+  flex-grow: 1;
+}
+
+.movielists button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.movielists button:hover {
+  background-color: #0056b3;
+}
+
+/* Movie Details */
+.listed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.listed li {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.listed img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.listed h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.listed h4 {
+  background-color: #555;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.listed button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.listed button.bg-danger {
+  background-color: #e3342f;
+}
+
+.listed button.bg-primary {
+  background-color: #3490dc;
+}
+
+.listed button:hover {
+  opacity: 0.9;
+}
+
+/* Add Movie Form */
+.bg-gray {
+  background-color: #e2e8f0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.bg-gray input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.bg-gray button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bg-gray button:hover {
+  background-color: #0056b3;
+}
+
+/* Search Bar */
+.form-control {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
